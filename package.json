@@ -1,11 +1,13 @@
 {
   "name": "cleanup-local-branches",
-  "version": "0.0.1",
+  "version": "0.0.1-beta.4",
   "description": "CLI to remove local branches that are not in remote branches",
-  "main": "./dist/index",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc -",
+    "build": "tsc",
     "dev": "tsc -W",
+    "prepare": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,8 +26,11 @@
   },
   "homepage": "https://github.com/maafaishal/cleanup-local-branches#readme",
   "bin": {
-    "cleanup-local-branches": "./dist/index"
+    "cleanup-local-branches": "./dist/index.js"
   },
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
     "@types/node": "^16.18.12",
     "@types/prompts": "^2.4.2",
