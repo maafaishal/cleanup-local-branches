@@ -18,17 +18,13 @@ const printText = console.log;
       .toString()
       .trim();
 
-    if (!["master", "main"].includes(currentBranch)) {
-      throw Error(`You need to checkout to "master" or "main" branch first`);
-    }
-
     // Get the names of all local branches
     const localBranches = execSync("git branch")
       .toString()
       .split("\n")
       .map((branch) => branch.replace("*", "").trim())
       .filter(
-        (branch) => branch !== "" && branch !== "master" && branch !== "main"
+        (branch) => !["", "master", "main", currentBranch].includes(branch)
       );
 
     // Get the names of all remote branches
