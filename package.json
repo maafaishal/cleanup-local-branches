@@ -1,0 +1,35 @@
+{
+  "name": "cleanup-local-branches",
+  "version": "0.0.1",
+  "description": "CLI to remove local branches that are not in remote branches",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maafaishal/cleanup-local-branches.git"
+  },
+  "keywords": [
+    "cleanup",
+    "local",
+    "branches"
+  ],
+  "author": "Muhammad A Faishal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maafaishal/cleanup-local-branches/issues"
+  },
+  "homepage": "https://github.com/maafaishal/cleanup-local-branches#readme",
+  "bin": {
+    "cleanup-local-branches": "./dist/index.js"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "picocolors": "^1.0.0",
+    "yargs": "^17.6.2"
+  }
+}
