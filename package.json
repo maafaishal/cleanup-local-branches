@@ -1,6 +1,6 @@
 {
   "name": "cleanup-local-branches",
-  "version": "0.0.1-beta.7",
+  "version": "1.0.0",
   "description": "CLI to remove local branches that are not in remote branches",
   "main": "index.js",
   "types": "index.d.ts",
