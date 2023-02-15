@@ -1,15 +1,14 @@
 {
   "name": "cleanup-local-branches",
-  "version": "1.0.0",
-  "description": "CLI to remove local branches that are not in remote branches",
+  "version": "1.0.1",
+  "description": "CLI to remove all local branches that do not have a corresponding remote branch",
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
     "build": "tsc",
     "dev": "tsc -W",
     "prepublishOnly": "npm run build && cp -r ./dist/* . && rm -rf ./dist",
-    "postpublish": "git clean -fd",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postpublish": "git clean -fd"
   },
   "repository": {
     "type": "git",
@@ -37,13 +36,11 @@
   "devDependencies": {
     "@types/node": "^16.18.12",
     "@types/prompts": "^2.4.2",
-    "@types/yargs": "^17.0.22",
     "typescript": "^4.9.5"
   },
   "dependencies": {
     "ora": "^5.4.1",
     "picocolors": "^1.0.0",
-    "prompts": "^2.4.2",
-    "yargs": "^17.6.2"
+    "prompts": "^2.4.2"
   }
 }
