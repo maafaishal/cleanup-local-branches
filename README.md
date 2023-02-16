@@ -1,5 +1,8 @@
 # cleanup-local-branches
 
+![npm](https://img.shields.io/npm/v/cleanup-local-branches?style=flat-square)
+![npm](https://img.shields.io/npm/dt/cleanup-local-branches?style=flat-square)
+
 Command Line Interface (CLI) for cleaning up all local branches that do not have a corresponding remote branch.
 
 # Usage
